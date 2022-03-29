@@ -29,9 +29,6 @@ public class FeedBack {
 	@Column(name="feedbackdate")
 	private	LocalDate feedbackdate;
 	
-	//@ManyToOne
-	//@JoinColumn(name="loginId")
-	private User user;
 	
 	//@ManyToOne
 	//@JoinColumn(name="trainingCourseId")
