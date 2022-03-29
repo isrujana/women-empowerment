@@ -14,7 +14,7 @@ public class ITrainingCourseServiceImpl implements ITrainingCourseService{
 	ITrainingCourseDao dao;
 	
 	@Override
-	public TrainingCourse addTrainingCourse(TrainingCourse course) {
+	public void addTrainingCourse(TrainingCourse course) {
 		return dao.save(course);
 	}
 
