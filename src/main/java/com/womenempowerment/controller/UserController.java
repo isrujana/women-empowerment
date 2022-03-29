@@ -1,6 +1,7 @@
 package com.womenempowerment.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,9 +18,9 @@ public class UserController {
 	IUserService service;
 	
 	@PostMapping("/add")
-	public String addUser(@RequestBody User user) {
+	public ResponseEntity<String> addUser(@RequestBody User user) {
 		service.registerUser(user);
-		return "User added";
+		return new ResponseEntity<String>("User added",HttpStatus.OK);
 	}
 	
 }
