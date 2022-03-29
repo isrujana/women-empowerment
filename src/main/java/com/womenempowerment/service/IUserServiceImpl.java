@@ -10,7 +10,7 @@ public class IUserServiceImpl implements IUserService{
 	@Autowired
 	IUserDao dao;
 
-	public User registerUser(User user) {
+	public void registerUser(User user) {
 		return dao.save(user);
 	}
 
