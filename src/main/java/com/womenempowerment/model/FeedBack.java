@@ -40,4 +40,78 @@ public class FeedBack {
 	//@ManyToOne
 	//@JoinColumn(name="schemeId")
 	private Scheme scheme;
+
+	public int getFeedBackId() {
+		return feedBackId;
+	}
+
+	public void setFeedBackId(int feedBackId) {
+		this.feedBackId = feedBackId;
+	}
+
+	public int getSchemeRating() {
+		return schemeRating;
+	}
+
+	public void setSchemeRating(int schemeRating) {
+		this.schemeRating = schemeRating;
+	}
+
+	public int getSchemeTrainingRating() {
+		return schemeTrainingRating;
+	}
+
+	public void setSchemeTrainingRating(int schemeTrainingRating) {
+		this.schemeTrainingRating = schemeTrainingRating;
+	}
+
+	public int getOverallRating() {
+		return overallRating;
+	}
+
+	public void setOverallRating(int overallRating) {
+		this.overallRating = overallRating;
+	}
+
+	public String getComments() {
+		return comments;
+	}
+
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
+
+	public LocalDate getFeedbackdate() {
+		return feedbackdate;
+	}
+
+	public void setFeedbackdate(LocalDate feedbackdate) {
+		this.feedbackdate = feedbackdate;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public TrainingCourse getTraining() {
+		return training;
+	}
+
+	public void setTraining(TrainingCourse training) {
+		this.training = training;
+	}
+
+	public Scheme getScheme() {
+		return scheme;
+	}
+
+	public void setScheme(Scheme scheme) {
+		this.scheme = scheme;
+	}
+	
+	
 }
